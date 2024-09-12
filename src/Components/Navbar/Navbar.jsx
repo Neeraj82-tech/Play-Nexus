@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import menu_icon from '../../assets/menu.png';
 import youtubeIcon1 from '../../assets/youtubeIcon1.png';
+import Play from '../../assets/Play.png';
 import profile_image from '../../assets/profile_image.png';
 import search_icon from '../../assets/search.png';
 import upload_icon from '../../assets/upload.png';
@@ -27,7 +28,7 @@ export const Navbar = ({ setSidebar }) => {
         <nav className='flex-div'>
             <div className="nav-left flex-div">
                 <img className='menu-icon' onClick={() => setSidebar(prev => !prev)} src={menu_icon} alt="menu" />
-                <Link to='/'><img className='youtubeIcon1' src={youtubeIcon1} alt="logo" /></Link>
+                <Link to='/'><img className='youtubeIcon1' src={Play} alt="logo" /></Link>
             </div>
 
             <div className="nav-middle flex-div">
